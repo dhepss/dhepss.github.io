@@ -1,0 +1,277 @@
+       
+        #home-section {
+            height: 120vh;
+            background-image: url('path/to/image.jpg');
+            background-size: 1600px 1200px; /* Tambahkan baris ini */
+            background-position: center center;
+            background-repeat: no-repeat;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 50px; /* Menambahkan margin-bottom sebesar 50px */
+          }
+          
+          @media (min-width: 768px) {
+            #home-section {
+              background-size: auto 100%;
+            }
+          }
+
+          /* about*/
+          #about-section {
+            background-color: #f5f5f5;
+            padding: 80px 0;
+            text-align: center;
+          }
+          
+          #about-section h2 {
+            font-size: 36px;
+            margin-bottom: 40px;
+          }
+          
+          #about-section img {
+            width: 100%;
+            max-width: 400px;
+            margin-bottom: 20px;
+          }
+          
+          #about-section p {
+            font-size: 18px;
+            line-height: 1.8;
+            margin-bottom: 20px;
+          }
+          
+          @media (max-width: 767px) {
+            #about-section img {
+              max-width: 100%;
+            }
+          }
+          
+        /* Style untuk footer */
+		footer {
+			background-color: rgb(86, 190, 197);
+			color: #fff;
+			padding: 30px;
+			text-align: center;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+			right: 0;
+            padding-top: 50px; /* Menambahkan padding-top sebesar 50px */
+		}
+		
+		/* Style untuk logo media sosial */
+		footer i {
+			font-size: 30px;
+			margin: 10px;
+			color: #fff;
+		}
+		
+		/* Style untuk teks hak cipta */
+		footer small {
+			display: block;
+			margin-top: 10px;
+			font-size: 12px;
+		}
+
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background-color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,.1);
+            z-index: 9999;
+          }
+          
+          nav ul {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 60px;
+          }
+          
+          nav li {
+            margin: 0 10px;
+          }
+          
+          nav a {
+            text-decoration: none;
+            color: #333;
+          }
+          nav.scrolled {
+            background-color: #333;
+            color: #fff;
+            box-shadow: 0 2px 5px rgba(0,0,0,.5);
+          }
+          /* kontak */
+          #contact {
+            padding: 100px 0;
+            background: #F8F9FA;
+          }
+          
+          .section-title {
+            font-size: 36px;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 30px;
+            color: #343A40;
+            text-align: center;
+          }
+          
+          .section-subtitle {
+            text-align: center;
+            font-size: 18px;
+            margin-bottom: 60px;
+            color: #6C757D;
+          }
+          
+          .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 40px;
+          }
+          
+          .contact-item .icon {
+            width: 60px;
+            height: 60px;
+            background: #343A40;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-right: 20px;
+          }
+          
+          .contact-item .icon i {
+            font-size: 28px;
+            color: #fff;
+          }
+          
+          .contact-item h4 {
+            font-size: 24px;
+            font-weight: 700;
+            margin-bottom: 10px;
+          }          
+          /* akhir */
+
+          /* skill */
+          #skills {
+            background-color: #f7f7f7;
+            padding: 80px 0;
+          }
+          
+          #skills h2 {
+            font-size: 3rem;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 30px;
+          }
+          
+          #skills h3 {
+            font-size: 2rem;
+            font-weight: 600;
+            color: #555;
+            margin-bottom: 20px;
+          }
+          
+          #skills ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+          }
+          
+          #skills li {
+            margin-bottom: 10px;
+            font-size: 1.2rem;
+            font-weight: 400;
+            color: #666;
+          }
+          
+          #skills li:before {
+            content: "\f058";
+            font-family: "Font Awesome 5 Free";
+            margin-right: 10px;
+            font-size: 1.4rem;
+            font-weight: 900;
+            color: #ff6b6b;
+          }
+          
+          /* akhir */
+          /* portoffolio */
+          .portfolio-section {
+            background-color: #f8f9fa96;
+            padding: 100px 0;
+            border-bottom: 4px;
+          }
+          
+          .portfolio-wrapper {
+            position: relative;
+            overflow: hidden;
+          }
+          
+          .portfolio-img {
+            position: relative;
+          }
+          
+          .portfolio-img img {
+            width: 100%;
+            height: auto;
+            transition: all 0.4s ease-in-out;
+          }
+          
+          .portfolio-img:hover img {
+            transform: scale(1.1);
+          }
+          
+          .portfolio-info {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 20px;
+            color: #fff;
+            background-color: rgba(0, 0, 0, 0.7);
+            transition: all 0.4s ease-in-out;
+          }
+          
+          .portfolio-info:hover {
+            bottom: -50px;
+          }
+          
+          .portfolio-info h3 {
+            margin-top: 0;
+            font-size: 24px;
+            font-weight: 700;
+            text-transform: uppercase;
+          }
+          
+          .portfolio-info p {
+            margin-bottom: 0;
+            font-size: 16px;
+          }
+          
+          @media (max-width: 767px) {
+            .portfolio-item {
+              margin-bottom: 30px;
+            }
+          }
+          
+          @media (min-width: 768px) {
+            .portfolio-item {
+              margin-bottom: 50px;
+            }
+          }
+          
+          @media (min-width: 992px) {
+            .portfolio-item {
+              margin-bottom: 70px;
+            }
+          }
+          
+  
